@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS-grid speeltuin</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">	
+		<link type="text/css" href="styles/versie3.css" rel="stylesheet"/>	
+
+	</head>
+	<body>
+	  <div id="grid-container">
+	  	<header class="grid-item-header">
+	  		<div class="zwarte-box">
+	  			<img class="twitter-header" src="images/twitter-logo-button.svg">
+	  			<img class="facebook-header" src="images/facebook-logo-button.svg">
+	  			<img class="linkedin-header" src="images/linkedin.svg">
+	  			<p class="straat-header">Fahrenheitstraat</p>
+	  			<p class="postcode-header">625 2561 DC DEN HAAG</p>
+	  			<p class="telefoonnummer-header">070 - 3631819</p>
+	  		</div>
+		  	<div class="achtergrond-nav">
+		  		<div class="menutoggle">
+		  			<a href="#">&#9776;</a>
+		  		</div>
+		  		<div class="logo-achtergrond">
+		  			<picture class="logo">
+						 <source media="(max-width: 110px)" srcset="images/kaaslogo-85w.svg" />
+						 <source media="(min-width: 110px) and (max-width: 150px)"
+						 srcset="images/kaaslogo-110w.svg" />
+						 <source media="(min-width: 150px)" srcset="images/kaaslogo-150w.svg" />
+						 <img src="images/kaaslogo-150w.svg" alt="De logo van de kaasspeciaalzaak" />
+					</picture> 
+		  		</div>
+		  	</div>
+	  	</header>
+		<nav id="menu-mobiel" class="inactive">
+	    	<ul>
+	    		<li><a href="#">home</a></li>
+	    		<li><a href="#">over ons</a></li>
+	    		<li><a href="#">de winkel</a></li>
+	    		<li><a href="#">contact</a></li>
+	    		<li><a href="#">over kaas</a></li>
+	    		<li><a href="#">nieuws</a></li>    		
+	    	</ul>
+	    </nav>
+	    <nav id="menu-groot">
+	    	<ul>
+	    		<li><a href="#">home</a></li>
+	    		<li><a href="#">over ons</a></li>
+	    		<li><a href="#">de winkel</a></li>
+	    		<div class="geen-menu-item"></div>
+	    		<li><a href="#">contact</a></li>
+	    		<li><a href="#">over kaas</a></li>
+	    		<li><a href="#">nieuws</a></li>    		
+	    	</ul>
+	    </nav>
+
+		<section class="kaas-header-box">
+	    	<picture>
+	    		 <source media="(max-width: 767px)" srcset="images/kaas-header-360w.svg" />
+				 <source media="(min-width: 768px) and (max-width: 1365px)"
+				 srcset="images/kaas-header-768.svg"/>
+				 <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="images/kaas-header-1366.svg" />
+				 <source media="(min-width: 1920px)" srcset="images/kaas-header-1920.svg" />
+				 <img class="kaas-header" src="images/kaas-header-1920.svg" alt="De foto van kaas" />
+	    	</picture>
+	    </section>
+	    <article class="introductietekst">
+	    	<div class="tekstueel-gedeelte-introductietekst">
+	    		<h2 class="titel-intro">Passie voor kaas</h2>
+	
+				<p class="tekst-intro">Welkom bij Kaasspeciaalzaak Ed Boele in Den Haag. Al een paar keer waren we de beste of bijna-beste kaasspecialist van Nederland en nog steeds draaien we mee in de top. Want wij hebben een passie voor kaas, die wij graag met onze klanten willen delen.</p>
+				<p class="tekst-intro">In onze ruime winkel aan de Fahrenheitstraat hebben we een assortiment kazen om U tegen te zeggen. Een overvloed aan Nederlandse en buitenlandse heerlijkheden. En elke kaas heeft z’n eigen verhaal. Een verhaal dat wij u graag doorvertellen. Want wij hebben er kaas van gegeten.</p>
+	    	</div>
+			<div class="foto_achtergrond_beste_kaasspecialist">
+				<picture>
+		    		 <source media="(max-width: 767px)" srcset="images/beste-kaasspecialist-360w.svg"/>
+					 <source media="(min-width: 768px) and (max-width: 1365px)"
+					 srcset="images/beste-kaasspecialist-768w.svg"/>
+					 <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="images/beste-kaasspecialist-1366w.svg"/>
+					 <source media="(min-width: 1920px)" srcset="images/beste-kaasspecialist-1920w.svg"/>
+					 <img src="images/kaas-header-1920w.svg" alt="De foto van kaas"/>
+	    		</picture>	
+			</div>
+	    </article>
+		<article class="team-kaas">
+			<div class="foto_achtergrond_team_kaas">
+				<picture>
+		    		 <source media="(max-width: 767px)" srcset="images/foto-team-kaas-360w.svg"/>
+					 <source media="(min-width: 768px) and (max-width: 1365px)"
+					 srcset="images/foto-team-kaas-768w.svg"/>
+					 <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="images/foto-team-kaas-1366w.svg"/>
+					 <source media="(min-width: 1920px)" srcset="images/foto-team-kaas-1920w.svg"/>
+					 <img src="images/kaas-header-1920w.svg" alt="Foto van het team de kaasspecialist"/>
+	    		</picture>		
+			</div>
+	   		<p class="tekst-foto-team">Ons team bij het ontvangen van de trofee voor de Beste Buitenlandse Kaasspecialist 2016-2017. Van links naar rechts: Nicole, Denise, Annet, Ed, Fleur en Maria.</p>
+		</article>
+	  	<aside class="weblogintro">
+	  		<div class="tekstueel-stuk-blog-intro">
+	  			<h2 class="titel-weblogintro">Weblog</h2>
+	    		<p class="tekst-weblogintro">Vorige week zijn we samen met ons kaasteam op studiereis geweest naar Piemonte.</p>
+	    		<a class="blog-link" href="#">Lees meer</a>
+	  		</div>
+	    	<div class="foto-blog-achtergrond">
+	    		<picture>
+		    		 <source media="(max-width: 767px)" srcset="images/blog-image-360w.svg"/>
+					 <source media="(min-width: 768px) and (max-width: 1365px)"
+					 srcset="images/blog-image-768w.svg"/>
+					 <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="images/blog-image-1366w.svg"/>
+					 <source media="(min-width: 1920px)" srcset="images/blog-image-1920w.svg"/>
+					 <img src="images/facebook-ad-1920w.svg" alt="Foto bij de blog"/>
+	    		</picture>
+	    	</div>
+	  	</aside>
+	  	<aside class="facebook-ad">
+	  		<div class="facebook-foto-achtergrond">
+	  			<picture>
+		    		 <source media="(max-width: 767px)" srcset="images/facebook-ad-360w.svg"/>
+					 <source media="(min-width: 768px) and (max-width: 1365px)"
+					 srcset="images/facebook-ad-768w.svg"/>
+					 <source media="(min-width: 1366px) and (max-width: 1919px)" srcset="images/facebook-ad-1366w.svg"/>
+					 <source media="(min-width: 1920px)" srcset="images/facebook-ad-1920w.svg"/>
+					 <img src="images/facebook-ad-1920w.svg" alt="Advertentie van onze facebookpagina"/>
+	    		</picture>	
+	  		</div>
+	  	</aside>
+	    <footer>
+	    	<div class="footerbox">
+	    		<div class="gegevens-kaasspeciaalzaak-footer">
+		    		<h2 class="subkop-footer">De kaasspeciaalzaak</h2>
+		    		<p class="gegeven-footer">Fahrenheitsstraat 625</p>
+		    		<p class="gegeven-footer">2561 DC DEN HAAG</p>
+		    		<p class="gegeven-footer">070 - 3631819</p>
+	    		</div>
+	    		<div class="links">
+	    			<div class="links-footer">
+			    		<a class="cookies" href="#">Over cookies</a>
+			    		<a class="disclaimer" href="#">Disclaimer</a>
+		    		</div>
+		    		<div class="logolinks-box">
+			    		<a href="#"><img class="logobutton-linkedin" src="images/linkedin.svg"></a>
+			    		<a href="#"><img class="logobutton-twitter" src="images/twitter-logo-button.svg"></a>
+			    		<a href="#"><img class="logobutton-facebook" src="images/facebook-logo-button.svg"></a>
+		    		</div>
+	    		</div>
+	   			<div class="copyright">
+		    		<img class="copyright-icoon" src="images/copyright.svg">
+		    		<p class="copyright-tekst">Lakhsmi Sewnath 2018</p>
+	    		</div>
+	    	</div>
+	    </footer>
+	  </div>
+
+	
+		 
+
+	  <script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>

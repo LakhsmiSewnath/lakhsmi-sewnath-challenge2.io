@@ -1,0 +1,1551 @@
+body {
+    background-color: #F9DEB3;
+    width: 100%;
+    margin: 0px
+}
+
+/*De font dat wordt gebruikt voor de subkopjes*/
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+/*De font dat wordt gebruikt voor de tekst*/
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+}
+
+/*De layout/grid*/
+#grid-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: minmax(10px, 15px) 1fr minmax(10px, 15px);
+	grid-template-rows: 1fr;
+}
+
+header.grid-item-header {
+	grid-column: span 3;
+	width: 100%;
+}
+
+div.zwarte-box {
+	display: none;
+}
+
+
+div.achtergrond-nav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: none;
+	background-color: #1b1b1b;
+}
+
+/*Het donkergrijze achtergrond van het logo*/
+
+div.logo-achtergrond {
+	position: absolute;
+	align-self: flex-start;
+	background-color: #1b1b1b;
+	margin-left: 1%;
+	min-width: 60px;
+	max-width: 70px;
+	min-height: 60px;
+	max-height: 70px;
+	border: none;
+	border-radius: 50%;
+}
+
+div.menutoggle {
+	align-self: flex-end;
+	margin-right: 5%;
+}
+
+.menutoggle a {
+  	font-size: 2em;
+  	color: #FAA916;
+  	text-decoration: none;
+}
+
+.active {
+	width: 100%;
+	display: initial;
+	max-height: 500px;
+	background-color: #FAA916;
+	transition:  max-height 4s ease;
+}
+
+.inactive {
+	width: 100%;
+    display: none;
+    max-height: 0px;
+    transition:  max-height 1s ease;
+}
+
+
+/*Dit is de navigatie*/
+#menu-mobiel {
+	grid-column: span 3;
+	width: 100%;
+    background-color: #FAA916;
+    color: black;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+}
+
+
+#menu-mobiel ul { 
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding: 0px 30px 0px 0px;
+	background-color: #FAA916;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+}
+
+#menu-mobiel ul li {
+  flex-grow: 1;
+  display: flex;
+  padding: 1em;
+  margin: 0px;
+  list-style: none;
+  justify-content: center;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+}
+
+#menu-mobiel ul li:hover {
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+#menu-mobiel > ul > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+#menu-groot {
+	display: none;
+}
+
+
+section.kaas-header-box {
+	grid-column: span 3;
+	margin-top: -10px;
+}
+
+/*De foto van kaas bovenaan de pagina/ deel header*/
+img.kaas-header {
+	width: 100%;
+}
+
+article.introductietekst {
+	grid-column: 2/3;
+}
+
+div.tekstueel-gedeelte-introductietekst {
+	width: 100%;
+}
+
+/*De foto met van de logo van de nederlandse beste kaasspecialist*/
+
+
+img.beste_kaasspecialist {
+	margin-top: 25px;	
+	width: 100%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/*De foto van het team met bijbehorende tekst*/
+article.team-kaas {
+	grid-column: 2/3;
+}
+
+
+/*De foto van het team*/
+img.foto_team_kaas {
+	margin-top: 25px;
+	width: 100%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+
+
+/*Het introstukje van de blog met link en foto*/
+aside.weblogintro {
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+div.tekstueel-stuk-blog-intro {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+div.foto-blog-achtergrond {
+	margin-top: 55px;
+	grid-column: 2;
+	grid-row: span 3;
+	border: none;
+}
+
+/*De foto bij het introstukje van de blog*/
+img.blog-foto {
+	width: 100%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/*De titel bij het introstukje van de blog*/
+h2.titel-weblogintro {
+	grid-column: 1/2;
+}
+
+/*De tektst bij het introstukje van de blog*/
+p.tekst-weblogintro {
+	grid-column: 1/2;
+}
+
+/*De link "lees meer" in normale staat bij het introstukje van de blog*/
+a.blog-link:link {
+    color: #0099CC; 
+    text-decoration: none;
+    grid-column: 1/2;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a.blog-link:visited {
+    color: #0099CC; 
+    text-decoration: none;
+}
+
+/*De link  "lees meer" in actieve staatbij het introstukje van de blog*/
+a.blog-link:active {
+    color: #009999;
+    text-decoration: none;
+}
+
+aside.facebook-ad {
+	grid-column: 2/3;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+div.facebook-foto-achtergrond {
+	border: none;
+}
+
+img.facebook-foto {
+	width: 100%;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/*De footer*/
+footer {
+	grid-column: span 5;
+}
+
+div.footerbox {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	background-color: #1b1b1b;
+	color: white;
+	height: 200px;
+	line-height: 15px;
+}
+
+div.gegevens-kaasspeciaalzaak-footer {
+	width: 45%;
+	background-color: #1b1b1b;
+	color: white;
+	align-self: flex-start;
+	margin-top: 30px;
+	margin-left: -50%;
+}
+
+h2.subkop-footer {
+	font-size: 16px;
+}
+
+p.gegeven-footer {
+	font-size: 14px;
+}
+
+
+div.links {
+	width: 50%;
+	margin-left: 20%;
+	padding: 62px 0px 0px 0px;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*De links in de footer*/
+div.links-footer {
+	line-height: 22px;
+	color: white;
+	background-color: #1b1b1b;
+	font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;	
+    display: flex;
+    flex-direction: column;
+}
+
+a:link.cookies {
+ 	color: white;
+ 	text-decoration: none;
+}
+
+a:visited.cookies {
+ 	color: white;
+ 	text-decoration: none;
+}
+
+
+a:link.disclaimer {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited.disclaimer {
+	color: white;
+	text-decoration: none;
+}
+
+div.logolinks-box {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+img.logobutton-linkedin {
+	min-width: 25px;
+	max-width: 30px;
+	min-height: 25px;
+	max-height: 30px;
+}
+
+img.logobutton-twitter {
+	min-width: 25px;
+	max-width: 30px;
+	min-height: 25px;
+	max-height: 30px;
+	margin-left: 30%;
+}
+
+img.logobutton-facebook {
+	min-width: 25px;
+	max-width: 30px;
+	min-height: 25px;
+	max-height: 30px;
+	margin-left: 60%;
+}
+
+div.copyright {
+	width: 100%;
+	background-color: #1b1b1b;
+	display: inline;
+}
+
+img.copyright-icoon {
+	min-width: 15px;
+	max-width: 20px;
+	min-height: 15px;
+	max-height: 20px;
+	padding-left: 5%;
+	margin-top: 20px;
+}
+
+p.copyright-tekst {
+	padding-left: 13%;
+	margin-top: -15px;
+	font-size: 14px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background-color: #F9DEB3;
+        width: 100%;
+    	margin: 0px
+    }
+
+	   /*De font dat wordt gebruikt voor de subkopjes*/
+	h2 {
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+	}
+
+	/*De font dat wordt gebruikt voor de tekst*/
+	p {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 18px;
+	}
+
+	/*De layout/grid*/
+	#grid-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: minmax(15px, 20px) 1.5fr minmax(15px, 20px) 1fr minmax(15px, 20px);
+		grid-template-rows: 0fr 1fr;
+		}
+
+	header.grid-item-header {
+		grid-column: span 5;
+		margin-top: 0px;
+		height: 30px;
+		width: 100%;
+	}
+
+		div.achtergrond-nav {
+		display: flex;
+		width: 100%;
+		border: none;
+		background-color: #1b1b1b;
+	}
+
+	/*Dit is de navigatie*/
+	nav {
+		width: 100%;
+		height: 120px;
+		padding-top: 45px;
+		grid-column: span 5;
+	    border: none;
+	    display: flex;
+	    justify-content: space-between;
+	    background-color: #1b1b1b;
+	    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
+	}
+
+	nav ul {
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+		padding: 0px 30px 0px 0px;
+		background-color: #FAA916;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 18px;
+	}
+
+	div.menutoggle {
+		margin-top: -5px;
+		margin-left: 5%;
+	}
+
+	.menutoggle a {
+	  font-size: 2.5em;
+	  color: #FAA916;
+	  margin-left: 93%;
+	  text-decoration: none;
+	}
+
+	.active {
+	  display: initial;
+	  max-height: 500px;
+	  background-color: #FAA916;
+	  transition: max-height 4s ease;
+	}
+
+	.inactive {
+	  display: none;
+	  max-height: 0px;
+	  transition: max-height 1s;
+	}
+
+
+	nav ul li {
+	  flex-grow: 1;
+	  display: flex;
+	  padding: 1em;
+	  margin: 0px;
+	  list-style: none;
+	  justify-content: center;
+	  /*background-color: rgba(255, 255, 255, 0.2);*/
+	}
+
+	nav ul li:hover {
+	  background-color: rgba(50, 50, 50, 0.5);
+	}
+
+	nav > ul > li > a {
+	  color: black;
+	  text-decoration: none;
+	}
+
+	div.achtergrond-nav {
+		width: 100%;
+		border: none;
+	    min-height: 60px;
+	    max-height: 80px;
+	    margin-top: 0px;
+		background-color: #1b1b1b;
+	}
+
+	img.logo {
+		position: absolute;
+		z-index: 10;
+	}
+
+	div.logo-achtergrond {
+		position: absolute;
+		margin-top: 0px;
+		margin-left: 43%;
+		grid-column: 1/2;
+		grid-row: 1;
+		background-color: #1b1b1b;
+		min-width: 110px;
+		max-width: 120px;
+		min-height: 110px;
+		max-height: 120px;
+		border: none;
+		border-radius: 50%;
+
+	}
+
+	section.kaas-header-box {
+		grid-column: span 5;
+		margin-top: 0px;
+	}
+
+	/*De foto van kaas bovenaan de pagina/ deel header*/
+	img.kaas-header {
+		width: 100%;
+	}
+
+	article.introductietekst {
+		grid-column: 2/3;
+		display: grid;
+	}
+
+	div.tekstueel-gedeelte-introductietekst {
+		width: 100%;
+	}
+
+	/*De foto met van de logo van de nederlandse beste kaasspecialist*/
+
+	div.foto_achtergrond_beste_kaasspecialist {
+		border: none;
+		margin-top: -130px;
+	}
+
+	img.beste_kaasspecialist {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+	/*De foto van het team met bijbehorende tekst*/
+	article.team-kaas {
+		grid-column: 2/3;
+	}
+
+	div.foto_achtergrond_team_kaas {
+		margin-top: -160px;
+		border: none;
+	}
+
+	/*De foto van het team*/
+	img.foto_team_kaas {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}	
+
+
+	/*Het introstukje van de blog met link en foto*/
+	aside.weblogintro {
+		margin-top: -620px;
+		grid-column: 4;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	div.tekstueel-stuk-blog-intro {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	div.foto-blog-achtergrond {
+		margin-top: 55px;
+		grid-column: 2;
+		border: none;
+	}
+
+	/*De foto bij het introstukje van de blog*/
+	img.blog-foto {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+	/*De titel bij het introstukje van de blog*/
+	h2.titel-weblogintro {
+		grid-column: 1/2;
+		font-size: 18px;
+
+	}
+
+	/*De tektst bij het introstukje van de blog*/
+	p.tekst-weblogintro {
+		grid-column: 1/2;
+		font-size: 16px;
+	}
+
+	/*De link "lees meer" in normale staat bij het introstukje van de blog*/
+	a.blog-link:link {
+	    color: #0099CC; 
+	    text-decoration: none;
+	    grid-column: 1/2;
+	    font-size: 16px;
+	    font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	a.blog-link:visited {
+	    color: #0099CC; 
+	    text-decoration: none;
+	}
+
+	/*De link  "lees meer" in actieve staatbij het introstukje van de blog*/
+	a.blog-link:active {
+	    color: #009999;
+	    text-decoration: none;
+	}
+
+	aside.facebook-ad {
+		grid-column: 4;
+		grid-row: 3;
+		margin-top: 220px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-row-gap: 30px;
+	}
+
+	div.facebook-foto-achtergrond {
+		border: none;
+	}
+
+	img.facebook-foto {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}	
+
+
+		/*De footer*/
+	footer {
+		grid-column: span 5;
+	}
+
+	div.footerbox {
+		width: 100%;
+		background-color: #1b1b1b;
+		color: white;
+		height: 240px;
+		line-height: 15px;
+	}
+
+	div.gegevens-kaasspeciaalzaak-footer {
+		background-color: #1b1b1b;
+		color: white;
+		width: 50%;
+		margin-left: 3%;
+		margin-top: 35px;
+		display: inline-block;
+	}
+
+	h2.subkop-footer {
+		font-size: 18px;
+	}
+
+	p.gegeven-footer {
+		font-size: 16px;
+	}
+	 
+
+	/*De links in de footer*/
+	div.links-footer {
+		display: block;
+		width: 12%;
+	    height: 80px;
+		color: white;
+		background-color: #1b1b1b;
+		margin-left: 28%;
+		margin-top: -95px;
+		line-height: 27px;
+		font-size: 16px;
+	    font-family: 'Source Sans Pro', sans-serif;	
+	}
+
+	a:link.cookies {
+	 	color: white;
+	 	text-decoration: none;
+	}
+
+	a:visited.cookies {
+	 	color: white;
+	 	text-decoration: none;
+	}
+
+
+	a:link.disclaimer {
+		color: white;
+		text-decoration: none;
+	}
+
+	a:visited.disclaimer {
+		color: white;
+		text-decoration: none;
+	}
+
+	div.logo-box {
+		position: absolute;
+		width: 30%;
+		display: inline-block;
+		margin-left: 44%;
+		margin-top: -80px;
+	}
+
+	img.logobutton-linkedin {
+		min-width: 25px;
+		max-width: 30px;
+		min-height: 25px;
+		max-height: 30px;
+	}
+
+	img.logobutton-twitter {
+		min-width: 25px;
+		max-width: 30px;
+		min-height: 25px;
+		max-height: 30px;
+		margin-left: 2%;
+	}
+
+	img.logobutton-facebook {
+		min-width: 25px;
+		max-width: 30px;
+		min-height: 25px;
+		max-height: 30px;
+		margin-left: 2%;
+	}
+
+	div.copyright {
+		height: 40px;
+		width: 100%;
+		background-color: #1b1b1b;
+		display: inline;
+		margin-top: -20px;
+		margin-left: 0%;
+	}
+
+	img.copyright-icoon {
+		min-width: 20px;
+		max-width: 25px;
+		min-height: 20px;
+		max-height: 25px;
+		margin-left: 3%;
+		margin-top: 30px;
+	}
+
+	p.copyright-tekst {
+		margin-left: 8%;
+		margin-top: -20px;
+		font-size: 16px;
+	}
+
+}
+
+
+
+
+@media only screen and (min-width: 1366px) {
+
+	body {
+        background-color: #F9DEB3;
+        width: 100%;
+    	margin: 0px
+    }
+
+	   /*De font dat wordt gebruikt voor de subkopjes*/
+	h2 {
+		font-family: 'Lato', sans-serif;
+		font-size: 28px;
+	}
+
+	/*De font dat wordt gebruikt voor de tekst*/
+	p {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 20px;
+	}
+
+	/*De layout/grid*/
+	#grid-container {
+		margin: 0px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: minmax(120px, 150px) 1.5fr minmax(30px, 35px) 1fr minmax(120px, 150px);
+		grid-template-rows: 1fr;
+		grid-row-gap: 30px;
+	}
+
+	header.grid-item-header {
+		grid-column: span 5;
+		margin-top: 0px;
+		display: flex;
+	}
+	/*Het donkergrijze achtergrond van het logo*/
+
+	div.logo-achtergrond {
+		align-self: center;
+		margin-top: 0px;
+		margin-left: 46%;
+		min-width: 120px;
+		max-width: 130px;
+		min-height: 120px;
+		max-height: 130px;
+		border: none;
+	}
+
+	div.zwarte-box {
+		width: 100%;
+		height: 40px;
+		background-color: black;
+		color: #FAA916;
+		display: inline-block;
+	}
+
+	img.twitter-header {
+		width: 20px;
+		height: 20px;
+		margin-left: 2%;
+		margin-top: 10px;
+	}
+
+	img.facebook-header {
+		width: 20px;
+		height: 20px;
+		margin-left: 1%;
+		margin-top: 10px;
+	}
+
+	img.linkedin-header {
+		width: 20px;
+		height: 20px;
+		margin-left: 1%;
+		margin-top: 10px;
+	}
+
+	p.straat-header {
+		margin-top: -25px;
+		margin-left: 61%;
+	}
+
+	p.postcode-header {
+		margin-top: -45px;
+		margin-left: 73%;
+	}
+
+	p.telefoonnummer-header {
+		margin-top: -45px;
+		margin-left: 89%;
+	}
+
+
+	section.kaas-header-box {
+		grid-column: span 5;
+		margin-top: -110px;
+	}
+
+		
+	div.achtergrond-nav {
+		display: none;
+	}
+
+	div.menutoggle {
+		display: none;
+	}
+
+	.active {
+		display: none;
+	}
+
+	.inactive {
+	    display: none;
+	}
+	
+	#menu-mobiel {
+		display: none;
+	}	 
+
+		/*Dit is de navigatie*/
+	#menu-groot {
+		margin-top: -1.5%;
+		padding: 0px;
+		height: 110px;
+		display: flex;
+		grid-column: span 5;
+		justify-content: center;
+		width: 100%;
+	    background-color: #1b1b1b;
+	    color: black;
+	    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+	}
+
+	#menu-groot ul {
+		height: 70px;
+		margin: 0%;
+		padding: 0px; 
+		display: flex;
+		flex-flow: row;
+		width: 90%;
+		background-color: #1b1b1b;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16px;
+	}
+
+	#menu-groot ul li {
+		height: 100%;
+		padding: 0px;
+		display: flex;
+		margin: auto;
+		list-style: none;
+		justify-content: center;
+	}
+
+	#menu-groot ul li:hover {
+		background-color: #FAA916;
+		color: black;
+		display: flex;
+	}
+
+	#menu-groot ul li:active {
+		background-color: #FAA914;
+		color: black;
+		display: flex;
+	}
+
+	#menu-groot > ul > li > a {
+		color: white;
+		text-decoration: none;
+		margin: auto;
+	}
+
+	.geen-menu-item{
+		width: 15%;
+	}
+
+
+	article.introductietekst {
+		margin-top: -8%;
+		grid-column: 2;
+		display: grid;
+	}
+
+	div.tekstueel-gedeelte-introductietekst {
+		width: 100%;
+		margin-left: 1%;
+	}
+
+	div.foto_achtergrond_beste_kaasspecialist {
+		margin-top: -240px;
+	}
+
+	/*De foto met van de logo van de nederlandse beste kaasspecialist*/
+
+
+	img.beste_kaasspecialist {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+	/*De foto van het team met bijbehorende tekst*/
+	article.team-kaas {
+		grid-column: 2;
+		margin-top: -30%;
+	}
+
+	/*De foto van het team*/
+	img.foto_team_kaas {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+
+
+	/*Het introstukje van de blog met link en foto*/
+	aside.weblogintro {
+		grid-column: 4;
+		grid-row: 4;
+		margin-top: -7%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	div.tekstueel-stuk-blog-intro {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+
+
+	/*De foto bij het introstukje van de blog*/
+	img.blog-foto {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+	/*De titel bij het introstukje van de blog*/
+	h2.titel-weblogintro {
+		grid-column: 2;
+		font-size: 20px;
+	}
+
+	/*De tektst bij het introstukje van de blog*/
+	p.tekst-weblogintro {
+		grid-column: 2;
+		font-size: 18px;
+	}
+
+	/*De link "lees meer" in normale staat bij het introstukje van de blog*/
+	a.blog-link:link {
+	    color: #0099CC; 
+	    text-decoration: none;
+	    grid-column: 2;
+	    font-size: 18px;
+	    font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	a.blog-link:visited {
+	    color: #0099CC; 
+	    text-decoration: none;
+	}
+
+	/*De link  "lees meer" in actieve staatbij het introstukje van de blog*/
+	a.blog-link:active {
+	    color: #009999;
+	    text-decoration: none;
+	}
+
+	aside.facebook-ad {
+		grid-column: 4;
+		grid-row: 4;
+		margin-top: 55%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-row-gap: 30px;
+	}
+
+
+
+		/*De footer*/
+	footer {
+		grid-column: span 5;
+		background-color: #1b1b1b;
+	}
+
+	div.footerbox {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 70%;
+		background-color: #1b1b1b;
+		color: white;
+		height: 272px;
+		line-height: 20px;
+	}
+
+	div.gegevens-kaasspeciaalzaak-footer {
+		background-color: #1b1b1b;
+		color: white;
+		align-self: flex-start;
+		margin-top: 35px;
+		margin-left: -10%;
+	}
+
+	h2.subkop-footer {
+		font-size: 20px;
+	}
+
+	p.gegeven-footer {
+		font-size: 18px;
+	}
+
+
+	div.links {
+		width: 60%;
+		margin-top: 80px;
+		margin-left: -81%;
+		padding: 62px 0px 0px 0px;
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	/*De links in de footer*/
+	div.links-footer {
+		width: 60%;
+		align-self: flex-start;
+		line-height: 30px;
+		color: white;
+		background-color: #1b1b1b;
+		font-size: 18px;
+	    font-family: 'Source Sans Pro', sans-serif;	
+	    display: flex;
+	    flex-direction: column;
+	}
+
+
+	div.logolinks-box {
+		width: 30%;
+		margin-left: -40%;
+		align-self: flex-end;
+		margin-top: 10px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	img.logobutton-linkedin {
+		min-width: 35px;
+		max-width: 40px;
+		min-height: 35px;
+		max-height: 40px;
+	}
+
+	img.logobutton-twitter {
+		min-width: 35px;
+		max-width: 40px;
+		min-height: 35px;
+		max-height: 40px;
+		margin-left: 30%;
+	}
+
+	img.logobutton-facebook {
+		min-width: 35px;
+		max-width: 40px;
+		min-height: 35px;
+		max-height: 40px;
+		margin-left: 60%;
+	}
+
+	div.copyright {
+		width: 100%;
+		background-color: #1b1b1b;
+		display: inline;
+	}
+
+	img.copyright-icoon {
+		min-width: 15px;
+		max-width: 20px;
+		min-height: 15px;
+		max-height: 20px;
+		margin-left: -2%;
+		margin-top: 20px;
+	}
+
+	p.copyright-tekst {
+		margin-left: -7%;
+		margin-top: -25px;
+		font-size: 16px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+	   /*De font dat wordt gebruikt voor de subkopjes*/
+	h2 {
+		font-size: 36px;
+	}
+
+	/*De font dat wordt gebruikt voor de tekst*/
+	p {
+		font-size: 28px;
+	}
+
+	/*De layout/grid*/
+	#grid-container {
+		margin: 0px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: minmax(170px, 200px) 1.5fr minmax(30px, 35px) 1fr minmax(170px, 200px);
+		grid-template-rows: 1fr;
+		grid-row-gap: 30px;
+	}
+
+	header.grid-item-header {
+		grid-column: span 5;
+		margin-top: 0px;
+		display: flex;
+	}
+	/*Het donkergrijze achtergrond van het logo*/
+
+	div.logo-achtergrond {
+		align-self: center;
+		margin-top: 10px;
+		margin-left: 46%;
+		min-width: 120px;
+		max-width: 130px;
+		min-height: 120px;
+		max-height: 130px;
+		border: none;
+	}
+
+	div.zwarte-box {
+		width: 100%;
+		height: 40px;
+		background-color: black;
+		color: #FAA916;
+		display: inline-block;
+	}
+
+	img.twitter-header {
+		width: 20px;
+		height: 20px;
+		margin-left: 2%;
+		margin-top: 10px;
+	}
+
+	img.facebook-header {
+		width: 20px;
+		height: 20px;
+		margin-left: 1%;
+		margin-top: 10px;
+	}
+
+	img.linkedin-header {
+		width: 20px;
+		height: 20px;
+		margin-left: 1%;
+		margin-top: 10px;
+	}
+
+	p.straat-header {
+		margin-top: -25px;
+		margin-left: 61%;
+	}
+
+	p.postcode-header {
+		margin-top: -45px;
+		margin-left: 73%;
+	}
+
+	p.telefoonnummer-header {
+		margin-top: -45px;
+		margin-left: 89%;
+	}
+
+
+	section.kaas-header-box {
+		grid-column: span 5;
+		margin-top: -110px;
+	}
+
+		
+	div.achtergrond-nav {
+		display: none;
+	}
+
+	div.menutoggle {
+		display: none;
+	}
+
+	.active {
+		display: none;
+	}
+
+	.inactive {
+	    display: none;
+	}
+	
+	#menu-mobiel {
+		display: none;
+	}	 
+
+		/*Dit is de navigatie*/
+	#menu-groot {
+		margin-top: -1.5%;
+		padding: 0px;
+		height: 110px;
+		display: flex;
+		grid-column: span 5;
+		justify-content: center;
+		width: 100%;
+	    background-color: #1b1b1b;
+	    color: black;
+	    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+	}
+
+	#menu-groot ul {
+		height: 70px;
+		margin: 0%;
+		padding: 0px; 
+		display: flex;
+		flex-flow: row;
+		width: 90%;
+		background-color: #1b1b1b;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16px;
+	}
+
+	#menu-groot ul li {
+		height: 100%;
+		padding: 0px;
+		display: flex;
+		margin: auto;
+		list-style: none;
+		justify-content: center;
+	}
+
+	#menu-groot ul li:hover {
+		background-color: #FAA916;
+		display: flex;
+	}
+
+	#menu-groot ul li:active {
+		background-color: #FAA916;
+		opacity: 0.9;
+		display: flex;
+	}
+
+	#menu-groot > ul > li > a {
+		color: white;
+		text-decoration: none;
+		margin: auto;
+	}
+
+	.geen-menu-item{
+		width: 15%;
+	}
+
+
+	article.introductietekst {
+		margin-top: -8%;
+		grid-column: 2;
+		display: grid;
+	}
+
+	div.tekstueel-gedeelte-introductietekst {
+		width: 100%;
+		margin-left: 1%;
+	}
+
+	div.foto_achtergrond_beste_kaasspecialist {
+		margin-top: -240px;
+	}
+
+	/*De foto met van de logo van de nederlandse beste kaasspecialist*/
+
+
+	img.beste_kaasspecialist {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+	/*De foto van het team met bijbehorende tekst*/
+	article.team-kaas {
+		grid-column: 2;
+		margin-top: -30%;
+	}
+
+	/*De foto van het team*/
+	img.foto_team_kaas {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+
+
+	/*Het introstukje van de blog met link en foto*/
+	aside.weblogintro {
+		grid-column: 4;
+		grid-row: 4;
+		margin-top: -7%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	div.tekstueel-stuk-blog-intro {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+
+
+	/*De foto bij het introstukje van de blog*/
+	img.blog-foto {
+		width: 100%;
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	}
+
+	/*De titel bij het introstukje van de blog*/
+	h2.titel-weblogintro {
+		grid-column: 2;
+		font-size: 20px;
+	}
+
+	/*De tektst bij het introstukje van de blog*/
+	p.tekst-weblogintro {
+		grid-column: 2;
+		font-size: 18px;
+	}
+
+	/*De link "lees meer" in normale staat bij het introstukje van de blog*/
+	a.blog-link:link {
+	    color: #0099CC; 
+	    text-decoration: none;
+	    grid-column: 2;
+	    font-size: 18px;
+	    font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	a.blog-link:visited {
+	    color: #0099CC; 
+	    text-decoration: none;
+	}
+
+	/*De link  "lees meer" in actieve staatbij het introstukje van de blog*/
+	a.blog-link:active {
+	    color: #009999;
+	    text-decoration: none;
+	}
+
+	aside.facebook-ad {
+		grid-column: 4;
+		grid-row: 4;
+		margin-top: 55%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-row-gap: 30px;
+	}
+
+
+
+		/*De footer*/
+	footer {
+		grid-column: span 5;
+		background-color: #1b1b1b;
+	}
+
+	div.footerbox {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 70%;
+		background-color: #1b1b1b;
+		color: white;
+		height: 350px;
+		line-height: 30px;
+	}
+
+	div.gegevens-kaasspeciaalzaak-footer {
+		background-color: #1b1b1b;
+		color: white;
+		align-self: flex-start;
+		margin-top: 30px;
+		margin-left: -8%;
+	}
+
+	h2.subkop-footer {
+		font-size: 28px;
+	}
+
+	p.gegeven-footer {
+		font-size: 20px;
+	}
+
+
+	div.links {
+		width: 60%;
+		margin-top: 135px;
+		margin-left: -100%;
+		padding: 62px 0px 0px 0px;
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	/*De links in de footer*/
+	div.links-footer {
+		width: 60%;
+		margin-left: 47%;
+		align-self: flex-start;
+		line-height: 45px;
+		color: white;
+		background-color: #1b1b1b;
+		font-size: 20px;
+	    font-family: 'Source Sans Pro', sans-serif;	
+	    display: flex;
+	    flex-direction: column;
+	}
+
+
+	div.logolinks-box {
+		width: 30%;
+		margin-left: -100%;
+		align-self: flex-end;
+		margin-top: -70px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	img.logobutton-linkedin {
+		min-width: 45px;
+		max-width: 50px;
+		min-height: 45px;
+		max-height: 50px;
+	}
+
+	img.logobutton-twitter {
+		min-width: 45px;
+		max-width: 50px;
+		min-height: 45px;
+		max-height: 50px;
+		margin-left: 30%;
+	}
+
+	img.logobutton-facebook {
+		min-width: 45px;
+		max-width: 50px;
+		min-height: 45px;
+		max-height: 50px;
+		margin-left: 60%;
+	}
+
+	div.copyright {
+		width: 100%;
+		background-color: #1b1b1b;
+		display: inline;
+	}
+
+	img.copyright-icoon {
+		min-width: 25px;
+		max-width: 30px;
+		min-height: 25px;
+		max-height: 30px;
+		margin-left: 10%;
+		margin-top: 10px;
+	}
+
+	p.copyright-tekst {
+		margin-left: 7%;
+		margin-top: -45px;
+		font-size: 20px;
+	}
+
+}
+}
